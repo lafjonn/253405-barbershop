@@ -24,96 +24,118 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <h1>Средства для ухода</h1>
-      <ul class="breadcrumbs">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li>Средства для ухода</li>
-      </ul>
-      <div class="show-item">
+    <main>
+      <div class="container">
+        <h1>Средства для ухода</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li>Средства для ухода</li>
+        </ul>
+          
+        <div class="show-item">
           <form action="#" method="post">
-            <h2>Производители</h2>
-            <label class="brand-name"><input name="baxter" type="checkbox" checked>Baxter of California</label>
-            <label class="brand-name"><input name="natty" type="checkbox">Mr Natty</label>
-            <label class="brand-name"><input name="suavecito" type="checkbox" checked>Suavecito</label>
-            <label class="brand-name"><input name="malin" type="checkbox">Malin+Goetz</label>
-            <label class="brand-name"><input name="murray" type="checkbox">Murray's</label>
-            <label class="brand-name"><input name="crew" type="checkbox" checked>American Crew</label>
-            <h2>Группы товаров:</h2>
-            <label class="group-name"><input name="shave" type="checkbox">Бритвенные принадлежности</label>
-            <label class="group-name"><input name="care" type="checkbox" checked>Средства для ухода</label>
-            <label class="group-name"><input name="accessories" type="checkbox">Аксессуары</label>
+            <fieldset>
+              <legend>Производители</legend>
+                <label class="brand-name"><input name="baxter" type="checkbox" checked>Baxter of California</label>
+                <label class="brand-name"><input name="natty" type="checkbox">Mr Natty</label>
+                <label class="brand-name"><input name="suavecito" type="checkbox" checked>Suavecito</label>
+                <label class="brand-name"><input name="malin" type="checkbox">Malin+Goetz</label>
+                <label class="brand-name"><input name="murray" type="checkbox">Murray's</label>
+                <label class="brand-name"><input name="crew" type="checkbox" checked>American Crew</label>
+            </fieldset>
+            <fieldset>
+              <legend>Группы товаров:</legend>
+                <label class="group-name"><input name="shave" type="checkbox">Бритвенные принадлежности</label>
+                <label class="group-name"><input name="care" type="checkbox" checked>Средства для ухода</label>
+                <label class="group-name"><input name="accessories" type="checkbox">Аксессуары</label>
+            </fieldset>
             <input class="btn show-btn" type="submit" value="Показать"> <!-- кнопка «Показать» отвечает за отправку формы, при выключенном JavaScript должен осуществляться переход на отдельную страницу (отдельную страницу верстать не нужно) - не понятно как это сделать -->
           </form>
-      </div>
-      <div class="catalog">
-        <div class="item-section">
-          <a href="#">
-            <img src="http://placehold.it/150x100" alt="">
-            <p>Набор для путешествий <span>Baxter of California</span></p>
-          </a>
-          <div class="buy-section">
-            <p class="price">2900 руб</p>
-            <a class="btn buy-btn" href="">Купить</a>
-          </div>
         </div>
-        <div class="item-section"> <!-- так или лучше figure внутри а -->
-          <a href="#">
-            <img src="http://placehold.it/150x100" alt="">
-            <p>Увлажняющий кондиционер <span>Baxter of California</span></p>
-          </a>
-          <div class="buy-section">
-            <p class="price">750 руб</p>
-            <a class="btn buy-btn" href="">Купить</a>
-          </div>
-        </div>
-        <div class="item-section">
-          <a href="#">
-            <img src="http://placehold.it/150x100" alt="">
-            <p>Гель для волос <span>Suavecito</span></p>
-          </a>
-          <div class="buy-section">
-            <p class="price">290 руб</p>
-            <a class="btn buy-btn" href="">Купить</a>
-          </div>
-        </div>
-        <div class="item-section">
-          <a href="#">
-            <img src="http://placehold.it/150x100" alt="Глина для укладки волос">
-            <p>Глина для укладки волос <span>American Crew</span></p>
-          </a>
-          <div class="buy-section">
-            <p class="price">500 руб</p>
-            <a class="btn buy-btn" href="">Купить</a>
+          
+        <div class="catalog">
+          <div class="item-section">
+            <a href="#">
+              <figure>
+                <img src="http://placehold.it/150x100" alt="">
+                <figcaption>Набор для путешествий <span>Baxter of California</span></figcaption>
+              </figure>
+            </a>
+            <div class="buy-section">
+              <p class="price">2900 руб</p>
+              <a class="btn buy-btn" href="">Купить</a>
+            </div>
           </div>
           <div class="item-section">
-          <a href="#">
-            <img src="http://placehold.it/150x100" alt="">
-            <p>Гель для волос<span>American Crew</span></p>
-          </a>
-          <div class="buy-section">
-            <p class="price">300 руб</p>
-            <a class="btn buy-btn" href="">Купить</a>
+            <a href="#">
+              <figure>
+                <img src="http://placehold.it/150x100" alt="">
+                <figcaption>Увлажняющий кондиционер <span>Baxter of California</span></figcaption>
+            </a>
+            <div class="buy-section">
+              <p class="price">750 руб</p>
+              <a class="btn buy-btn" href="">Купить</a>
+            </div>
+          </div>
+          <div class="item-section">
+            <a href="#">
+              <figure>
+                <img src="http://placehold.it/150x100" alt="">
+                <figcaption>Гель для волос <span>Suavecito</span></figcaption>
+              </figure>
+            </a>
+            <div class="buy-section">
+              <p class="price">290 руб</p>
+              <a class="btn buy-btn" href="">Купить</a>
+            </div>
+          </div>  
+          <div class="item-section">
+            <a href="#">
+              <figure>
+                <img src="http://placehold.it/150x100" alt="Глина для укладки волос">
+                <figcaption>Глина для укладки волос <span>American Crew</span></figcaption>
+              </figure>
+            </a>
+            <div class="buy-section">
+              <p class="price">500 руб</p>
+              <a class="btn buy-btn" href="">Купить</a>
+            </div>
+            <div class="item-section">
+            <a href="#">
+              <figure>
+                <img src="http://placehold.it/150x100" alt="">
+                <figcaption>Гель для волос<span>American Crew</span></figcaption>
+              </figure>
+            </a>
+            <div class="buy-section">
+              <p class="price">300 руб</p>
+              <a class="btn buy-btn" href="">Купить</a>
+            </div>
+            </div>
+            <div class="item-section">
+              <a href="#">
+                <figure>
+                  <img src="http://placehold.it/150x100" alt="">
+                  <figcaption>Набор для бритья <span>Baxter of California</span></figcaption>
+                </figure>
+              </a>
+              <div class="buy-section">
+                <p class="price">3900 руб</p>
+                <a class="btn buy-btn" href="">Купить</a>
+              </div>
+            </div>
+            <div class="pagination">
+              <a href="#">1</a>
+              <span class="current">2</span>
+              <a href="#">3</a>
+              <a href="#">4</a>
+            </div>
           </div>
         </div>
-        <div class="item-section">
-          <a href="#">
-            <img src="http://placehold.it/150x100" alt="">
-            <p>Набор для бритья <span>Baxter of California</span></p>
-          </a>
-          <div class="buy-section">
-            <p class="price">3900 руб</p>
-            <a class="btn buy-btn" href="">Купить</a>
-          </div>
-        </div>
-        <div class="pagination">
-          <a href="#">1</a>
-          <span class="current">2</span>
-          <a href="#">3</a>
-          <a href="#">4</a>
-        </div>
+      </div>
     </main>
+      
     <footer class="page-footer">
         <div class="container">
           <section class="footer-contacts">
